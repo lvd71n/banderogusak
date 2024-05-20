@@ -135,3 +135,105 @@ body {
   font-size: 24px;
   line-height: 100%;
 }
+
+.form-container-page {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 80px 0;
+  background: linear-gradient(90deg, #fcfefe 0%, #a5deff 100%);
+}
+
+.form-container {
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 40px;
+  padding: 32px 60px 60px 60px;
+  margin: 0 auto;
+  max-width: 573px;
+  background-color: #fff;
+}
+
+.form-trezub {
+  margin-bottom: 32px;
+}
+
+.form-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  color: #1b1d1f;
+}
+
+.form-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1b1d1f;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-field-label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1b1d1f;
+  margin-bottom: 8px;
+}
+
+.form-field-name {
+  margin-bottom: 24px;
+}
+
+.form-input {
+  box-sizing: border-box;
+  border: 1px solid #005bbb;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1b1d1f;
+  padding: 12px 24px;
+  width: 100%;
+}
+
+.form-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #005bbb;
+  cursor: pointer;
+  padding: 12px 24px;
+  background: #ffd500;
+  border-radius: 8px;
+  border: none;
+}
+
+.form-field-email {
+  margin-bottom: 48px;
+}
+
+.gus-anim {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+}

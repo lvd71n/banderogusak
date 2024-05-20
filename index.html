@@ -10,12 +10,13 @@
   <link 
   href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"
   >
+  <link rel="preload" href="./img/gus-anim.gif" as="image">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <section class="main-page">
     <div class="wrapper">
-      <img class="logo" src="css/img/logo black.svg" alt="logo">
+      <img class="logo" src="img/logo black.svg" alt="logo">
       <div class="main-page-text-container">
         <p class="main-page-hello-text">Доброго вечора, ми з України</p>
         
@@ -25,13 +26,15 @@
         Пишаюся своїми подвигами, бороню Батьківщину та підтримую
         позитивний дух народу. Слава Україні!
         </p>
-        <button class="main-page-button">Запустити гуся</button>
+        <button class="main-page-button" id="go-to-form-btn">
+          Запустити гуся
+        </button>
       </div>
-      <img src="css/img/gus.svg" alt="Banderogus">
+      <img src="img/gus.svg" alt="Banderogus">
     </div>
   </section>
   <section class="facts-page">
-    <img src="css/img/trezub.svg" alt="trezub">
+    <img src="img/trezub.svg" alt="trezub">
     <div class="facts-page-text-container">
       <h2 class="facts-page-title">Цікаві факти про бандерогусей</h2>
       <p class="facts-page-description">
@@ -43,7 +46,7 @@
     </div>
     <div class="facts-page-facts-container">
       <article class="fact-container">
-        <img src="css/img/gus1.svg" alt="gus-navigator">
+        <img src="img/gus1.svg" alt="gus-navigator">
         <div class="fact-text-container">
           <h3 class="fact-text-title">Система навігації</h3>
           <p class="fact-text">
@@ -53,7 +56,7 @@
         </div>
       </article>
       <article class="fact-container">
-        <img src="css/img/gus2.svg" alt="gus-scaner">
+        <img src="img/gus2.svg" alt="gus-scaner">
         <div class="fact-text-container">
           <h3 class="fact-text-title">Очі-тепловізори</h3>
           <p class="fact-text">
@@ -63,7 +66,7 @@
         </div>
       </article>
       <article class="fact-container">
-        <img src="css/img/gus3.svg" alt="gus-flyer">
+        <img src="img/gus3.svg" alt="gus-flyer">
         <div class="fact-text-container">
           <h3 class="fact-text-title">Байракрила</h3>
           <p class="fact-text">
@@ -74,5 +77,25 @@
       </article>
     </div>
   </section>
+  <section class="form-container-page">
+    <form action="#" class="form-container" id="form">
+      <img class="form-trezub" src="img/trezub.svg" alt="trezub">
+      <h3 class="form-title">Поділися, будь ласка, поштою</h3>
+      <p class="form-description">та запиши гуся до бандерозагону</p>
+
+      <div class="form-field form-field-name">
+        <label for="user-name" class="form-field-label">Ім'я</label>
+        <input type="text" id="user-name" class="form-input">
+      </div>
+      <div class="form-field form-field-email">
+        <label for="user-email" class="form-field-label">Email</label>
+        <input type="email" id="user-email" class="form-input">
+      </div>
+      <button type="submit" class="form-button" id="launch-btn">
+        Запустити гуся
+      </button>
+    </form>
+  </section>
+  <script src="js/form.js"></script>
 </body>
 </html>
